@@ -5,7 +5,7 @@ import { StudentLogin } from './components/StudentLogin';  // Changed to named i
 import { HODLogin } from './components/HODLogin';  // Changed to named import
 import { SecurityLogin } from './components/SecurityLogin';  // Changed to named import
 import { StudentDashboard } from './components/StudentDashboard';  // Changed to named import
-import { ApplyOutpass } from './components/ApplyOutpass';  // Changed to named import
+import {ApplyOutpass}  from './components/ApplyOutpass';// Changed to named import
 import { MyOutpasses } from './components/MyOutpasses';  // Changed to named import
 import { HODDashboard } from './components/HODDashboard';  // Changed to named import
 import { SecurityDashboard } from './components/SecurityDashboard';  // Changed to named import
