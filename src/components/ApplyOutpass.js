@@ -74,9 +74,11 @@ export function ApplyOutpass() {
     }
   };
 
-  const submitOutpass = async (formData) => {
-    handleSubmit(formData);
-  };
+  async function submitOutpass(event) {
+    event.preventDefault();
+    // collect state and send payload
+    // await fetch('/api/apply-outpass', ...)
+  }
 
   if (!email) {
     return (
@@ -100,7 +102,7 @@ export function ApplyOutpass() {
     <div className="apply-container">
       <div className="apply-card">
         <h2>Apply for Outpass</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={submitOutpass}>
           <div className="form-group">
             <label>College Email</label>
             <input
