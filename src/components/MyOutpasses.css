@@ -1,0 +1,270 @@
+.outpasses-container {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+.outpasses-header {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outpasses-header h2 {
+  font-size: 26px;
+  color: #1e293b;
+  margin: 0;
+}
+
+.outpasses-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.my-outpasses {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.outpass-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.outpass-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.outpass-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.outpass-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.outpass-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-exited {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.outpass-details {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.outpass-details p {
+  margin: 8px 0;
+}
+
+.btn-back-dash {
+  padding: 10px 20px;
+  background: white;
+  color: #64748b;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-back-dash:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  background: #f8fafc;
+}
+
+.empty-state, .loading-state {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+.empty-state-icon {
+  font-size: 72px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  color: #94a3b8;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Request details styling */
+.request-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.meta-icon {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.meta-content {
+  flex: 1;
+}
+
+.meta-label {
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+/* Color-coded left border based on status */
+.outpass-card:has(.status-pending) {
+  border-left-color: #d97706;
+}
+
+.outpass-card:has(.status-approved) {
+  border-left-color: #059669;
+}
+
+.outpass-card:has(.status-rejected) {
+  border-left-color: #dc2626;
+}
+
+.outpass-card p {
+  margin: 12px 0;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.outpass-card p strong {
+  color: #1e293b;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .outpasses-container {
+    padding: 15px;
+  }
+
+  .outpasses-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .outpasses-header h2 {
+    font-size: 22px;
+  }
+
+  .outpass-card {
+    padding: 20px;
+  }
+
+  .outpass-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .outpass-card p strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .request-meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .outpasses-header {
+    padding: 15px;
+  }
+
+  .outpasses-header h2 {
+    font-size: 20px;
+  }
+
+  .outpass-card {
+    padding: 15px;
+  }
+
+  .outpass-header h3 {
+    font-size: 16px;
+  }
+
+  .status-badge {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .empty-state {
+    padding: 40px 20px;
+  }
+
+  .empty-state-icon {
+    font-size: 56px;
+  }
+}

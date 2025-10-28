@@ -1,0 +1,357 @@
+{
+  "outpasses": [
+    {
+      "id": "zNr_ZtLYm",
+      "studentEmail": "22me1a5455@rcee.ac.in",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T15:08",
+      "status": "exited",
+      "createdAt": "2025-10-26T09:38:54.056Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T09:39:46.497Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T09:44:47.734Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T09:44:47.734Z"
+    },
+    {
+      "id": "vAOo1M9IP",
+      "studentEmail": "22me1a22me1a5455hod@rcee.ac.in",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T15:19",
+      "status": "exited",
+      "createdAt": "2025-10-26T09:49:44.382Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:29:56.733Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:30:19.318Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:30:19.318Z"
+    },
+    {
+      "id": "R00UtzOSN",
+      "studentEmail": "test@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "9999999999",
+      "reason": "test",
+      "returnTime": "2025-10-26T14:55:00",
+      "status": "exited",
+      "createdAt": "2025-10-26T09:55:07.952Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:29:58.537Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:30:21.054Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:30:21.054Z"
+    },
+    {
+      "id": "v3Xps1_F3",
+      "studentEmail": "22me1a5455hod@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "Fever",
+      "returnTime": "2025-10-26T15:46",
+      "status": "exited",
+      "createdAt": "2025-10-26T10:16:23.151Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:29:55.020Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:30:23.582Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:30:23.582Z"
+    },
+    {
+      "id": "k7BcqMG_k",
+      "studentEmail": "22me1aq5455@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T15:59",
+      "status": "exited",
+      "createdAt": "2025-10-26T10:29:10.507Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:30:01.547Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:30:22.389Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:30:22.389Z"
+    },
+    {
+      "id": "uIRa1f5iK",
+      "studentEmail": "22me1a5455hod@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T16:06",
+      "status": "exited",
+      "createdAt": "2025-10-26T10:36:53.748Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:54:05.051Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:54:29.003Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:54:29.003Z"
+    },
+    {
+      "id": "MmYKAHn8U",
+      "studentEmail": "student@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "9999999999",
+      "reason": "Test",
+      "returnTime": "2025-10-26T14:55:00",
+      "status": "exited",
+      "createdAt": "2025-10-26T10:44:26.978Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:54:08.092Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:54:30.664Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:54:30.664Z"
+    },
+    {
+      "id": "zKgUoChx-",
+      "studentEmail": "22me1a5455hod@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T16:21",
+      "status": "exited",
+      "createdAt": "2025-10-26T10:53:33.447Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T10:54:10.859Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T10:54:32.652Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T10:54:32.652Z"
+    },
+    {
+      "id": "bGZmAKY5n",
+      "studentEmail": "22me1a5455hod@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T16:37",
+      "status": "exited",
+      "createdAt": "2025-10-26T11:07:55.111Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T11:08:17.135Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T11:08:33.975Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T11:08:33.975Z"
+    },
+    {
+      "id": "SkbZHXKZi",
+      "studentEmail": "22me1a5455hod@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever\n",
+      "returnTime": "2025-10-26T16:42",
+      "status": "exited",
+      "createdAt": "2025-10-26T11:12:43.430Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "22me1a5455hod@rcee.ac.in",
+          "at": "2025-10-26T11:12:58.521Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T11:13:13.049Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T11:13:13.049Z"
+    },
+    {
+      "id": "iTUbEoKrl",
+      "studentEmail": "22me1a5455hod@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T17:02",
+      "status": "exited",
+      "createdAt": "2025-10-26T11:34:17.063Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "hod@rcee.ac.in",
+          "at": "2025-10-26T11:35:03.338Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T11:35:23.600Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T11:35:23.600Z"
+    },
+    {
+      "id": "FtMQC_lnT",
+      "studentEmail": "22me1a5455@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T19:50",
+      "status": "exited",
+      "createdAt": "2025-10-26T14:24:55.670Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "aidshod@rcee.ac.in",
+          "at": "2025-10-26T15:08:03.257Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T15:08:27.389Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T15:08:27.389Z"
+    },
+    {
+      "id": "gWTpYX3zE",
+      "studentEmail": "22me1a5455@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "6281792687",
+      "reason": "fever",
+      "returnTime": "2025-10-26T20:13",
+      "status": "rejected",
+      "createdAt": "2025-10-26T14:43:45.198Z",
+      "history": [
+        {
+          "action": "rejected",
+          "by": "aidshod@rcee.ac.in",
+          "at": "2025-10-26T15:08:05.868Z"
+        }
+      ],
+      "approver": "aidshod@rcee.ac.in",
+      "actionTime": "2025-10-26T15:08:05.868Z"
+    },
+    {
+      "id": "Njp-01XwC",
+      "studentEmail": "22me@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "7836926569",
+      "reason": "fever",
+      "returnTime": "2025-10-26T20:37",
+      "status": "exited",
+      "createdAt": "2025-10-26T15:07:15.519Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "aidshod@rcee.ac.in",
+          "at": "2025-10-26T15:08:08.608Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T15:08:30.008Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T15:08:30.008Z"
+    },
+    {
+      "id": "2w8aUAlIt",
+      "studentEmail": "22me@rcee.ac.in",
+      "regNo": "",
+      "parentPhone": "3546827839",
+      "reason": "fever",
+      "returnTime": "2025-10-26T20:47",
+      "status": "exited",
+      "createdAt": "2025-10-26T15:17:42.399Z",
+      "history": [
+        {
+          "action": "approved",
+          "by": "ai&dshod@rcee.ac.in",
+          "at": "2025-10-26T15:18:27.381Z"
+        },
+        {
+          "action": "exited",
+          "by": "security",
+          "at": "2025-10-26T15:18:53.059Z"
+        }
+      ],
+      "approver": "security",
+      "actionTime": "2025-10-26T15:18:53.059Z"
+    }
+  ]
+}

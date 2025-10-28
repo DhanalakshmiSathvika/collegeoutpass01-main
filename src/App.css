@@ -1,0 +1,522 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #1e40af;
+  --color-secondary: #f43f5e;
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-light: #f8fafc;
+  --color-dark: #1e293b;
+  --color-gray: #64748b;
+  --color-border: #e2e8f0;
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.5;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* -----------------------------
+   Home / Landing Page
+------------------------------*/
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.home-header h1 {
+  color: var(--color-primary);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  color: var(--color-gray);
+  font-size: 16px;
+}
+
+.home-title {
+  font-size: 48px;
+  color: #1e293b;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  color: #64748b;
+  font-weight: 400;
+}
+
+.role-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.role-card {
+  background-color: white;
+  width: 280px;
+  height: 280px;
+  padding: 40px 20px;
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.role-card {
+  border-left: 6px solid #667eea;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.role-card.hod-card {
+  border-left: 6px solid #f5576c;
+}
+
+.role-card.hod-card:hover {
+  box-shadow: 0 15px 40px rgba(245, 87, 108, 0.3);
+  border-color: #f5576c;
+}
+
+.role-card.security-card {
+  border-left: 6px solid #ff8c42;
+}
+
+.role-card.security-card:hover {
+  box-shadow: 0 15px 40px rgba(255, 140, 66, 0.3);
+  border-color: #ff8c42;
+}
+
+.card-icon {
+  font-size: 72px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.role-card:hover .card-icon {
+  transform: scale(1.1);
+}
+
+.role-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 26px;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-arrow {
+  font-size: 28px;
+  color: #667eea;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+}
+
+.role-card.hod-card .card-arrow {
+  color: #f5576c;
+}
+
+.role-card.security-card .card-arrow {
+  color: #ff8c42;
+}
+
+.role-card:hover .card-arrow {
+  transform: translateX(8px);
+}
+
+.home-footer {
+  background: white;
+  border-top: 1px solid var(--color-border);
+  margin-top: 50px;
+  padding: 15px 20px;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.home-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.home-footer a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   Login Forms
+------------------------------*/
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+form h2 {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="datetime-local"],
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+small {
+  color: #667085;
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 5px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Primary Buttons */
+button[type="submit"] {
+  background: var(--color-primary);
+  color: white;
+}
+
+button[type="button"] {
+  background: #6c757d;
+  color: white;
+}
+
+/* -----------------------------
+   Dashboard Layout
+------------------------------*/
+.student-dashboard,
+.hod-dashboard,
+.security-dashboard {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.dashboard-title {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.dashboard-subtitle {
+  text-align: center;
+  color: var(--color-gray);
+  margin-bottom: 25px;
+}
+
+/* -----------------------------
+   Request Cards (Common)
+------------------------------*/
+.request-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-left: 6px solid var(--color-primary);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: 0.3s;
+}
+
+.request-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.request-header h3 {
+  margin: 0;
+  color: var(--color-dark);
+}
+
+.request-header .status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.status-approved {
+  background: rgba(16, 185, 129, 0.15);
+  color: #047857;
+}
+
+.status-pending {
+  background: rgba(251, 191, 36, 0.2);
+  color: #b45309;
+}
+
+.status-rejected {
+  background: rgba(239, 68, 68, 0.15);
+  color: #b91c1c;
+}
+
+.status-exited {
+  background: rgba(37, 99, 235, 0.15);
+  color: #1d4ed8;
+}
+
+.status-returned {
+  background: rgba(245, 158, 11, 0.15);
+  color: #92400e;
+}
+
+.request-body p {
+  margin: 6px 0;
+  color: #374151;
+  font-size: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons inside cards */
+.btn-approve {
+  background: var(--color-success);
+  color: white;
+}
+
+.btn-reject {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.btn-exit {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-return {
+  background: var(--color-warning);
+  color: white;
+}
+
+/* Exit Status */
+.exit-status {
+  text-align: right;
+  font-weight: 600;
+  color: var(--color-success);
+}
+
+/* -----------------------------
+   Empty / Placeholder States
+------------------------------*/
+.empty-state {
+  text-align: center;
+  color: var(--color-gray);
+  padding: 40px;
+}
+
+.empty-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* -----------------------------
+   Animations
+------------------------------*/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -----------------------------
+   Responsive Styles
+------------------------------*/
+@media (max-width: 1024px) {
+  .cards-container {
+    gap: 30px;
+  }
+
+  .role-card {
+    width: 280px;
+    height: 260px;
+  }
+
+  .home-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    margin-bottom: 40px;
+  }
+
+  .home-title {
+    font-size: 32px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .role-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role-card {
+    width: 90%;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .request-card {
+    padding: 15px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 28px;
+  }
+
+  .role-card {
+    height: 220px;
+    padding: 30px 20px;
+  }
+
+  .card-icon {
+    font-size: 56px;
+  }
+}
