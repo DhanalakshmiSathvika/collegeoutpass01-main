@@ -23,54 +23,27 @@ export function ApplyOutpass() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    setLoading(true);
+
+    // collect your state values here (replace names with yours)
+    const payload = {
+      name: email,
+      phone: formData.parentPhone,
+      reason: formData.reason,
+      leavingDate: formData.returnTime,
+    };
 
     try {
-      // Check if backend is reachable first
-      const healthCheck = await fetch('http://localhost:5000/api/outpasses')
-        .catch(() => null);
-      
-      if (!healthCheck) {
-        throw new Error('Backend server is not running. Please start the backend server.');
-      }
-
-      const response = await fetch('http://localhost:5000/api/outpasses', {
+      const res = await fetch('/api/apply-outpass', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          studentEmail: email,
-          parentPhone: formData.parentPhone,
-          reason: formData.reason,
-          returnTime: formData.returnTime,
-          status: 'pending',
-          createdAt: new Date().toISOString()
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
       });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to submit outpass');
-      }
-
-      // Success! Dispatch event and navigate
-      window.dispatchEvent(new CustomEvent('outpassCreated', { 
-        detail: data.outpass 
-      }));
-
-      alert("Outpass request submitted successfully!");
-      navigate("/student/my-outpasses");
-
-    } catch (error) {
-      console.error('Submit Error:', error);
-      const errorMessage = error.message.includes('Backend server') 
-        ? error.message 
-        : 'Failed to submit outpass. Please check if the backend server is running.';
-      alert(errorMessage);
-    } finally {
-      setLoading(false);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Request failed');
+      // success handling (navigate / show toast)
+    } catch (err) {
+      console.error('Submit error:', err);
+      // show error to user
     }
   }
 

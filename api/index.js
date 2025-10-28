@@ -6,14 +6,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Put your API endpoints here (example)
+// Example route — adapt to your existing backend logic and routes
 app.post('/apply-outpass', async (req, res) => {
   try {
-    const { phoneNumber, reason, leavingDate } = req.body;
-    // Add your logic here
-    res.json({ success: true, message: 'Outpass application submitted' });
-  } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+    const payload = req.body;
+    // ...your processing (DB/email/etc)...
+    return res.json({ success: true, data: payload });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ success: false, message: err.message });
   }
 });
 
