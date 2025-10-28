@@ -74,6 +74,27 @@ export function ApplyOutpass() {
     }
   };
 
+  const submitOutpass = async (formData) => {
+    try {
+      const response = await fetch('/api/apply-outpass', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      const data = await response.json();
+      if (!data.success) {
+        throw new Error(data.message);
+      }
+      return data;
+    } catch (error) {
+      console.error('Error submitting outpass:', error);
+      throw error;
+    }
+  };
+
   if (!email) {
     return (
       <div className="apply-container">
