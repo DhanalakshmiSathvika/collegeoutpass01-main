@@ -75,42 +75,7 @@ export function ApplyOutpass() {
   };
 
   const submitOutpass = async (formData) => {
-    // Check if backend is reachable first
-    const healthCheck = await fetch('http://localhost:5000/api/outpasses')
-      .catch(() => null);
-      
-    if (!healthCheck) {
-      throw new Error('Backend server is not running. Please start the backend server.');
-    }
-
-    const response = await fetch('http://localhost:5000/api/outpasses', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        studentEmail: email,
-        parentPhone: formData.parentPhone,
-        reason: formData.reason,
-        returnTime: formData.returnTime,
-        status: 'pending',
-        createdAt: new Date().toISOString()
-      }),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      throw new Error(data.error || 'Failed to submit outpass');
-    }
-
-    // Success! Dispatch event and navigate
-    window.dispatchEvent(new CustomEvent('outpassCreated', { 
-      detail: data.outpass 
-    }));
-
-    alert("Outpass request submitted successfully!");
-    navigate("/student/my-outpasses");
+    handleSubmit(formData);
   };
 
   if (!email) {
